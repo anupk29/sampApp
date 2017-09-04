@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampApp.App">
+  <Application.Resources>
+
+    <!-- Application resource dictionary -->
+    <ResourceDictionary>
+      <Color x:Key="TimelineColor">#E4B6C3</Color>
+      <Color x:Key="HearderTextColor" >#3C3C3C</Color>
+      <Color x:Key="BodyTextColor">#869EAC</Color>
+      <color x:key="TimeColor">#A64C79</color>
+    </ResourceDictionary>
+    <!--font families-->
+    <OnPlatform  
+     x:key="RegularFontFamily"
+     x:TypeArguments="x:String"
+     Android="sans-serif"
+     IOS="HelveticaNeue"/>
+    <OnPlatform
+     x:key="LightFontFamily"
+     x:TypeArguments="x:String"
+     Android="sans-serif-light"
+     IOS="HelveticaNeue-LIGHT"/>
+    <OnPlatform  
+     x:key="MediumFontFamily"
+     x:TypeArguments="x:String"
+     Android="sans-serif-medium"
+     IOS="HelveticaNeue-MEDIUM"/>
+    
+    <!--fonts-->
+    <Font
+      x:Key="HeaderFont"
+      FontFamily="{StaticResource MediumFontFamily}"
+      Font="30"/>
+    <Font
+      x:Key="SubHeaderFont"
+      FontFamily="{StaticResource MediumFontFamily}"
+      Font="18"/>
+    <Font
+      x:Key="TitleFont"
+      FontFamily="{StaticResource MediumFontFamily}"
+      Font="20"/>
+    <Font
+      x:Key="BodyFont"
+      FontFamily="{StaticResource MediumFontFamily}"
+      Font="18"/>
+    <!--Styles-->
+    <Style x:Key="PageHeaderlabel" TargetType="Label">
+      <setter Property="TextColor" Value="{StaticResource HeaderTextColor}"/>
+      <setter Property="Font" Values="{StaticResoure HeaderFont}"/>
+    </Style>
+    
+  </Application.Resources>
+</Application>
