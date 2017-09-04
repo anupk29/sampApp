@@ -20,11 +20,11 @@ namespace SampApp
 
         protected override void OnStart()
         {
-            //MobileCenter.Start("android=5750b40d-91dc-455e-8c0d-47ff4778ffe9;"
-            //    //+
-            //    //    "uwp={Your UWP App secret here};" +
-            //    //    "ios={Your iOS App secret here}",
-            //        ,typeof(Analytics), typeof(Crashes));
+            MobileCenter.Start("android=5750b40d-91dc-455e-8c0d-47ff4778ffe9;"
+                    //+
+                    //    "uwp={Your UWP App secret here};" +
+                    //    "ios={Your iOS App secret here}",
+                    , typeof(Analytics), typeof(Crashes));
         }
 
         protected override void OnSleep()
